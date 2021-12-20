@@ -1,8 +1,5 @@
-
-
-
 FROM continuumio/anaconda3:4.4.0
-MAINTAINER UNP, https://unp.education
+MAINTAINER ARKA GHOSH, arka.ghosh@se.com
 EXPOSE 8000
 RUN apt-get update && apt-get install -y apache2 \
     apache2-dev \   

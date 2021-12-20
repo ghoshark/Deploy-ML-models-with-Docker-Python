@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Fri Mar 16 21:06:35 2018
+Created on Fri Dec 18 16:06:35 2021
 
-@author: vivekkalyanarangan
+@author: arghosh
 """
 
 import pickle
@@ -61,6 +61,7 @@ def predict_iris_file():
     input_data = pd.read_csv(request.files.get("input_file"), header=None)
     prediction = model.predict(input_data)
     return str(list(prediction))
+    
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
     
