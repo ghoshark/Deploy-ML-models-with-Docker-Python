@@ -30,6 +30,7 @@ FastAPI:
 
 Web browser:
 http://localhost:8000/docs
+or http://127.0.0.1:8000/redoc
 
 pip install fastapi
 pip install uvicorn
